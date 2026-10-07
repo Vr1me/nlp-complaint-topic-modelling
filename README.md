@@ -32,8 +32,8 @@ NMF on TF-IDF gives the more distinct topics. The discussion is at the end of th
 **Google Colab (as developed)**
 
 1. Open `complaint_topic_modelling.ipynb` in Colab.
-2. Create a Kaggle API token (Kaggle → Settings → API → Create New Token) and upload `kaggle.json` to `/content`.
-3. Run all cells.
+2. Create a Kaggle API token (Kaggle → Settings → API).
+3. Run all cells. The notebook asks for the token once and does not store it.
 
 **Locally**
 
@@ -44,6 +44,6 @@ pip install -r requirements.txt
 jupyter notebook complaint_topic_modelling.ipynb
 ```
 
-Place `kaggle.json` in `~/.kaggle/` and change the `/content/...` paths in the notebook to a local folder.
+The notebook asks for the Kaggle API token at runtime. Change the `/content/...` paths in the notebook to a local folder.
 
-`kaggle.json` is a personal key and is excluded through `.gitignore`.
+Never write the token into the notebook or commit it. Legacy `kaggle.json` key files are excluded through `.gitignore`.
