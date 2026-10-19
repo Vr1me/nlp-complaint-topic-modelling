@@ -3,6 +3,7 @@ numpy
 matplotlib
 nltk
 scikit-learn
+gensim
 wordcloud
 kaggle
 jupyter
